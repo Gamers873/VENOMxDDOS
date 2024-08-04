@@ -21,8 +21,8 @@ KEY_FILE = "keys.json"
 
 # Cooldown settings
 COOLDOWN_TIME = 0  # in seconds
-CONSECUTIVE_ATTACKS_LIMIT = 10
-CONSECUTIVE_ATTACKS_COOLDOWN = 99999 # in seconds
+CONSECUTIVE_ATTACKS_LIMIT = 5
+CONSECUTIVE_ATTACKS_COOLDOWN = 10 # in seconds
 
 # In-memory storage
 users = {}

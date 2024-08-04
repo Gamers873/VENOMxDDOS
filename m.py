@@ -8,10 +8,10 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('TOKEN')
+bot = telebot.TeleBot('6761128167:AAGjtCm56qcnfkQLLsDM2KiSexbJRcxKLy8')
 
 # Admin user IDs
-admin_id = ["your id"]
+admin_id = ["5430569954"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -48,7 +48,7 @@ allowed_user_ids = read_users()
 
 # Function to log command to the file
 def log_command(user_id, target, port, time):
-    admin_id = ["5588464519"]
+    admin_id = ["5430569954"]
     user_info = bot.get_chat(user_id)
     if user_info.username:
         username = "@" + user_info.username
@@ -63,10 +63,10 @@ def clear_logs():
     try:
         with open(LOG_FILE, "r+") as file:
             if file.read() == "":
-                response = "Logs are already cleared. No data found ❌."
+                response = "Logs are already cleared. No data found 🤬."
             else:
                 file.truncate(0)
-                response = "Logs cleared successfully ✅"
+                response = "Logs cleared successfully 🥵"
     except FileNotFoundError:
         response = "No logs found to clear."
     return response
@@ -151,7 +151,7 @@ def add_user(message):
             else:
                 response = "User already exists 🤦‍♂️."
         else:
-            response = "Please specify a user ID and the duration (e.g., 1hour, 2days, 3weeks, 4months) to add 😘."
+            response = "Please specify a user ID and the duration (e.g., 1hour, 2days, 3weeks, 4months) to add 😘😻."
     else:
         response = "You have not purchased yet purchase now from:- @venomXcrazy."
 
@@ -189,7 +189,7 @@ def remove_user(message):
             response = '''Please Specify A User ID to Remove. 
 ✅ Usage: /remove <userid>'''
     else:
-        response = "You have not purchased yet purchase now from:- @venomXcrazy 🙇."
+        response = "You have not purchased yet purchase now from:- @venomXcrazy 👌👌."
 
     bot.reply_to(message, response)
 
